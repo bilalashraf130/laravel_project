@@ -1,0 +1,24 @@
+name: laravel-project
+recipe: laravel
+config:
+  php: '8.0'
+  composer_version: '2.2.12'
+  via: nginx
+  webroot: public
+  database: mariadb
+  cache: redis
+  xdebug: false
+services:
+  node:
+    type: node:16
+  phpmyadminservice:
+    type: phpmyadmin
+tooling:
+  npm:
+    service: node
+  npx:
+    service: node
+  node:
+    service: node
+  yarn:
+    service: node

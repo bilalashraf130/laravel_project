@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -181,9 +181,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Illuminate\Redis\RedisServiceProvider::class,
+//        Encore\Admin\RedisManager\RedisManagerServiceProvider::class,
         /*
-         * Package Service Providers...
+         * Package Service Providers...d
          */
 
         /*
